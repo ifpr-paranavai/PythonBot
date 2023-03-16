@@ -176,13 +176,11 @@ conversa.train([
     ])
 
 while True:
-        try:
-            resposta = bot.get_response(input("Usuário: "))
-            if float(resposta.confidence) > 0.5:
-                print("Moya: ", resposta)
-            else:
-                print("Não manjo dessas paradas :(")
-        except(KeyboardInterrupt, EOFError, SystemExit):
-            break
-
-
+    try:
+        resposta = bot.get_response(input("Usuário: "))
+        if float(resposta.confidence) > 0.5:
+            print("Moya: ", resposta)
+        else:
+            print("Não manjo dessas paradas :(")
+    except(KeyboardInterrupt, EOFError, SystemExit):
+        break
