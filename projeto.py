@@ -86,8 +86,17 @@ conversa.train([
     'O que é NLP?', 'NLP é a sigla para "Natural Language Processing" (Processamento de Linguagem Natural), que é uma área da inteligência artificial que se concentra na interação entre humanos e computadores usando linguagem natural.',
     
     # Perguntas IFPR
-
+    'Quando foi inaugurado o IFPR campus Paranavaí?', 'O campus Paranavaí do Instituto Federal do Paraná (IFPR) foi inaugurado no dia 23 de setembro de 2013.',
     
+    'Quais os cursos de graduação disponíveis no IFPR campus Paranavaí?', 'Cursos de Graduação: Licenciatura em Química, Bacharelado em Agronomia, Engenharia Elétrica, Engenharia de Software',
+    
+    'Quantos IFPR existem atualmente?', 'Atualmente, o Instituto Federal do Paraná(IFPR) conta com 25 campi em funcionamento, distribuídos em diversas cidades do estado. Além disso, o IFPR possui uma Reitoria, localizada em Curitiba, que é responsável pela gestão e coordenação dos campi.',
+    
+    'Qual o maior campus do IFPR?', 'O maior campus do IFPR é o campus Curitiba, localizado na cidade de Curitiba, capital do estado do Paraná',
+
+    'Quantos alunos tem todos os campi do IFPR?', 'De acordo com dados de 2021, o Instituto Federal do Paraná (IFPR) possui cerca de 29 mil alunos matriculados em cursos técnicos, de graduação e de pós-graduação, distribuídos entre seus 25 campi.',
+
+    'Quantos alunos tem o IFPR campus Paranavaí?', 'De acordo com o Censo da Educação Superior de 2020, o IFPR campus Paranavaí tem um total de 1.073 alunos matriculados em cursos técnicos, de graduação e de pós-graduação.',
     
     ])
 
