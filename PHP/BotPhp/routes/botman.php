@@ -21,7 +21,7 @@ $botman->hears('Quem inventou o teste de Turing?', function ($bot)
 $botman->hears('Qual é o objetivo do teste de Turing?', function ($bot) 
 { 
     $bot->reply('O objetivo do teste de Turing é determinar se uma máquina pode ou não exibir um comportamento inteligente semelhante ao de um ser humano.'); 
-});"
+});
 
 $botman->hears('Como funciona o teste de Turing?', function ($bot) 
 { 
