@@ -75,7 +75,7 @@ $botman->hears('Qual é a história do IFPR campus Paranavaí?', function ($bot)
 });
 
 $botman->hears('O IFPR campus Paranavaí possui laboratórios de informática?', function ($bot) {
-    $bot->reply('Sim, o IFPR campus Paranavaí possui diversos laboratórios de informática
-
+    $bot->reply('Sim, o IFPR campus Paranavaí possui diversos laboratórios de informática');
+});
 
 $botman->hears('Start conversation', BotManController::class.'@startConversation');
