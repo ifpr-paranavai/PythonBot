@@ -13,42 +13,50 @@ class BotManController extends Controller
         
         $botman->hears('{message}', function($botman, $message) {
    
-            if ($message == 'Olá') {
-                $this->askName($botman);
+            if ($message == 1) {
+                $botman->reply('Claro, você gostaria de fazer uma reserva. Por favor, entre em contato conosco e indique as datas de check-in e check-out, bem como o número de hóspedes.');
             }
-            else if ($message == 'Turing') {
-                $botman->reply('O teste de Turing é baseado em uma conversa entre uma máquina e um ser humano, que deve determinar se as respostas da máquina são ou não indistinguíveis das respostas de um ser humano.');
+            else if ($message == 2) {
+                $botman->reply('Temos uma variedade de serviços disponíveis, incluindo restaurante, spa e academia. Posso fornecer mais detalhes sobre algum desses serviços, basta entrar em contato em nosso telefone');
             }
-            else if ($message == 'IFPR') {
-                $botman->reply('O IFPR campus Paranavaí foi criado em 2008, a partir da expansão da rede federal de educação profissional e tecnológica. Desde então, tem oferecido ensino de qualidade e formado profissionais capacitados para o mercado de trabalho.');
+            else if ($message == 3) {
+                $botman->reply('Nosso hotel está localizado no centro da cidade, próximo a várias atrações populares. O endereço é Las Vegas city.');
             }
-
+            else if ($message == 4) {
+                $botman->reply('O horário de check-in é às 15:00. No entanto, se você precisar de um check-in antecipado, por favor, entre em contato conosco para verificar a disponibilidade.');
+            }
+            else if ($message == 5) {
+                $botman->reply('O horário de checkout é às 12:00. Se você precisar de um checkout tardio, por favor, informe-nos com antecedência para que possamos fazer os arranjos necessários.');
+            }
+            else if ($message == 6) {
+                $botman->reply('Nossos atendentes trabalham das 09 às 18 horas, caso esteja dentro desse período, aguarde um momento!');
+            }
+            else if ($message == 7) {
+                $botman->reply('Nossos telefone para contato é +00(00)00000-0000');
+            }
             else{
                 $botman->reply("
-                    Olá, digite uma das opções abaixo para que eu possa te auxiliar melhor,
+                    Olá, digite um dos numeros das opções abaixo para que eu possa te auxiliar melhor,
                     Você deseja:
                     <br><br>
-                    1 - Turing - Conhecer mais sobre Alan Turing e o teste de turing. 
+                    1 - Fazer uma reserva
                     <br><br>
-                    2 - IFPR - Saber uma curiosidade sobre o campus Paranavaí. 
+                    2 - Conhecer nossos serviços
                     <br><br>
-                    3 - Olá - Perguntarei o seu nome para te cumprimentar. 
+                    3 - Informações sobre a localização
                     <br><br>
+                    4 - Horário de check-in
+                    <br><br>
+                    5 - Horário de checkout
+                    <br><br>
+                    6 - Falar com Atendente
+                    <br><br>
+                    7 - Contato
                 ");
             }
    
         });
    
         $botman->listen();
-    }
-   
-    public function askName($botman)
-    {
-        $botman->ask('Olá, qual o seu nome?', function(Answer $answer) {
-   
-            $name = $answer->getText();
-   
-            $this->say('Prazer em te conhecer '.$name);
-        });  
     }
 }
