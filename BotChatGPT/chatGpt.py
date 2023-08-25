@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = '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'
+openai.api_key = 'sua_chave'
 
 def get_completion(prompt, model="gpt-4"):
     messages = [{"role": "user", "content": prompt}]
